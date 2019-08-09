@@ -1,0 +1,35 @@
+<view class="search">
+  <image src="/assets/icon/search.png" class="img"></image>
+  <input placeholder="输入商品名或者商家名" class="inp"/>
+</view>
+
+<!-- list -->
+<view class="box">
+    <view class="itemBox" wx:for='{{list}}' wx:key='{{itme.name}}'>
+      <image src="{{ item.src }}" class="listImg"></image>
+      <text class="name">{{ item.name }}</text>
+    </view>
+</view>
+
+<!-- 全部商品 -->
+<view class="supGoodsBox">
+  <view class="supTitle">全部商品</view>
+  <scroll-view class="supGoods" scroll-x enable-flex>
+    <view wx:for='{{supGoods}}' class="supItemBox">
+      <image src="{{item.image}}" class="supImg"></image>
+      <text class="supGoodsTitle">{{ item.name }}</text>
+      <text class="price">￥{{ item.price}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="allGoodsBox">
+  <view class="allGoodsTitle">全部商品</view>
+  <view class="goodsBox" wx:for='{{ goodsList }}'>
+    <image src="{{ item.image }}" class="allGoodsImg"></image>
+    <view class="contentBox">
+      <text class="goodsTitle">{{ item.name }}</text>
+      <text class="goodsPrice">￥{{ item.price }}</text>
+    </view>
+  </view>
+</view>
