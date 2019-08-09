@@ -1,0 +1,62 @@
+/* pages/info/info.wxss */
+
+.infoBox {
+  margin: 20rpx 5rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  max-width: 500rpx;
+}
+
+.title {
+  font-size: 50rpx;
+  margin: 10rpx 0;
+}
+
+.desBox {
+  width: 500rpx;
+  margin: 60rpx 0;
+  display: flex;
+  flex-direction: column;
+}
+.des {
+  max-width: 500rpx;
+}
+.intro {
+  font-size: 40rpx;
+  margin: 20rpx 0;
+}
+
+.msg {
+  color: #888;
+  font-size: 30rpx;
+}
+
+.box {
+  margin-top: 10px;
+  width: 500rpx;
+  display: flex;
+}
+.actorBox {
+  margin: 0 10rpx;
+}
+.img1 {
+  width: 100rpx;
+  display: block;
+}
+.actorName {
+  display: inline-block;
+  width: 100rpx;
+  font-size: 20rpx;
+  color: #aaa;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

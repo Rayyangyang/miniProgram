@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="titleBox">
+  <view>
+    <text class="title1">sunny出品</text>
+  </view>
+  <view>
+    <text class="title2">第一个测试小程序</text>
+  </view>
+</view>
+
+<!-- list -->
+<view>
+  <navigator url='/pages/list/list?url={{item.url}}' wx:for='{{ list }}' class="listBox" hover-class="hover">
+    <text>{{item.name}}</text>
+    <text>></text>
+  </navigator>
+</view>

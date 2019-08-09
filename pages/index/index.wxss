@@ -1,0 +1,28 @@
+/**index.wxss**/
+.slide-image{
+  width: 100%;
+}
+.titleBox{
+  margin:40rpx;
+}
+.title1{
+  font-size: 60rpx;
+}
+.title2{
+  color:#aaa;
+}
+
+.listBox{
+  display: flex;
+  justify-content: space-between;
+  padding:0 40rpx;
+  height: 100rpx;
+  align-items: center;
+  background-color: #eee;
+  margin: 40rpx;
+  border-radius: 20rpx;
+}
+.hover{
+  background-color: rgb(42, 184, 209);
+  color:#fff;
+}

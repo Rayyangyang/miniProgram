@@ -1,0 +1,22 @@
+<!-- 电影详情页 -->
+<view class="infoBox">
+  <image src="{{ info.images.small}}" mode="widthFix" class="img"></image>
+  <view class="title">{{ info.title }}</view>
+  <view class="desBox">
+    <text class="score">评分:{{ info.rating.average }}</text>
+    <text class="dir">导演:{{ info.directors[0].name}}</text>
+    <view class="actor">
+      <view>演员:</view>
+      <scroll-view scroll-x  class="box" enable-flex>
+        <view wx:for='{{ info.casts }}' class="actorBox">
+          <image src="{{item.avatars.small}}" mode="widthFix" class="img1"></image>
+          <text class="actorName">{{ item.name }} </text>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="des">
+    <view class="intro">简介:</view>
+    <text class="msg">{{ info.summary }}</text>
+  </view>
+</view>

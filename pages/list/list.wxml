@@ -1,0 +1,19 @@
+<!-- 电影列表 -->
+<view class="title">{{ title }}</view>
+<navigator wx:for='{{ subjects }}' wx:key = '{{ item.id }}' class="movieBox" url="/pages/info/info?id='{{ item.id }}'">
+  <image src="{{item.images.small}}" class="img" mode='widthFix'></image>
+  <view class="msg">
+    <view>
+      <text class="name">{{ item.title}}</text>
+    </view>
+    <view>
+      <text class="originName">{{ item.original_title}}</text>
+    </view>
+    <view>
+      <text class="dir">{{ item.directors[0].name}}</text>
+    </view>
+  </view>
+  <view class="score">
+      {{ item.rating.average}}
+  </view>
+</navigator>
